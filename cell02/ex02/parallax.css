@@ -1,0 +1,28 @@
+body { margin: 0; }
+
+.parallax {
+  height: 100vh;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img1 { background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFW0y3PHRtlFk10KBkAfstHugiNN2fMSKx5xwZW2KrWw&s=10"); }
+.img2 { background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTacsISMl8XVrg5_m9IR3ZXxKvXHIdix6D31nnDc9Cf6A&s=10"); }
+
+.msg {
+  color: white;
+  font-size: 2em;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 10px 20px;
+}
+
+.black {
+  background: black;
+  color: white;
+  padding: 100px 20px;
+  text-align: center;
+}
