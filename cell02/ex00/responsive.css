@@ -1,0 +1,23 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+table {
+    width: 100vw;
+    height: 100vh;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+tr {
+    height: 100%;
+}
+td {
+    width: 50%;
+    height: 100%;
+}
+.First {
+    background-color: #d34d4d;
+}
+.Second {
+    background-color: #59de4d;
+}
