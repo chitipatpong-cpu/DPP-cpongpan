@@ -1,0 +1,13 @@
+form {
+    display: flex;
+    gap: 10px;
+}
+
+input, select {
+    padding: 10px;
+    font-size: 1em;
+}
+
+input[type="text"] {
+    width: 90px;
+}

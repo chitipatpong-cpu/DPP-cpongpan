@@ -4,433 +4,107 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Teyvat Guide | คู่มือ Genshin Impact สำหรับมือใหม่</title>
-  <meta name="description" content="คู่มือแฟนเมดสำหรับนักเดินทางมือใหม่ใน Genshin Impact รวมข้อมูล 7 ชาติ เทพเจ้า และระบบปฏิกิริยาธาตุ">
-  <link rel="icon" href="/rush/images/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="/rush/style.css">
+  <link rel="icon" href="images/favicon.svg">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- ========== NAVBAR (ติดด้านบนตลอดเวลาเลื่อน) ========== -->
-  <header class="site-header">
-    <div class="header-inner">
-      <a class="brand" href="#home">
-        <span class="brand-mark" aria-hidden="true">✦</span>
-        <span class="brand-text">
-          <strong>Teyvat Guide</strong>
-          <small>คู่มือเกนชินสำหรับมือใหม่</small>
-        </span>
-      </a>
-
-      <nav class="nav-desktop" aria-label="เมนูหลัก">
-        <a href="#home" data-section="home">หน้าแรก</a>
-        <a href="#world" data-section="world">โลกแห่งเทย์วัต</a>
-        <a href="#elements" data-section="elements">ธาตุและปฏิกิริยา</a>
-      </nav>
-
-      <div class="header-actions">
-        <button id="theme-toggle" class="theme-btn" type="button" aria-label="สลับโหมดกลางวัน/กลางคืน" aria-pressed="false">
-          <span class="theme-icon" aria-hidden="true">🌙</span>
-          <span class="theme-label">Day / Night</span>
-        </button>
-        <button id="menu-btn" class="menu-btn" type="button" aria-label="เปิดเมนูนำทาง" aria-expanded="false" aria-controls="mobile-drawer">☰</button>
-      </div>
+  <!-- แถบเมนู (ติดด้านบนตลอดเวลาเลื่อน) -->
+  <nav>
+    <a class="logo" href="#home">✦ Teyvat Guide</a>
+    <div>
+      <a href="#home">หน้าแรก</a>
+      <a href="#world">โลกแห่งเทย์วัต</a>
+      <a href="#elements">ธาตุและปฏิกิริยา</a>
+      <button id="theme-toggle" type="button" aria-label="เปลี่ยนเป็นธีมกลางวัน">🌙</button>
     </div>
+  </nav>
 
-    <nav id="mobile-drawer" class="nav-mobile" aria-label="เมนูสำหรับมือถือ" hidden>
-      <a href="#home" data-section="home">หน้าแรก (Home)</a>
-      <a href="#world" data-section="world">โลกแห่งเทย์วัต (World)</a>
-      <a href="#elements" data-section="elements">ธาตุและปฏิกิริยา (Elements)</a>
-    </nav>
-  </header>
+  <!-- ส่วนที่ 1: หน้าแรก -->
+  <section id="home">
+    <h1>Teyvat Guide</h1>
+    <p class="sub">บันทึกแห่งดวงดาวและบทกวีแห่งเจ็ดสวรรค์</p>
+    <p class="hero-text">
+      คู่มือสำหรับนักเดินทางมือใหม่ใน Genshin Impact เริ่มต้นที่เมืองแรกของการผจญภัย
+      แล้วเรียนรู้ระบบธาตุที่เป็นหัวใจของการต่อสู้
+    </p>
+    <a class="button" href="#world">เริ่มสำรวจ</a>
+  </section>
 
-  <main>
+  <!-- ส่วนที่ 2: เมืองเริ่มต้น -->
+  <section id="world">
+    <h2>เมืองเริ่มต้นของนักเดินทาง</h2>
+    <p class="intro">นักเดินทางทุกคนเริ่มการผจญภัยในเทย์วัตที่นี่ เมืองที่ได้ชื่อว่าเมืองแห่งอิสรภาพ</p>
 
-    <!-- ========== SECTION 1: HOME ========== -->
-    <section id="home" class="hero">
-      <div class="hero-inner">
-        <p class="pill">✦ คู่มือการผจญภัยเทย์วัตฉบับแฟนเมด</p>
-        <h1>Teyvat Guide</h1>
-        <p class="hero-sub">บันทึกแห่งดวงดาวและบทกวีแห่งเจ็ดสวรรค์</p>
-        <p class="hero-text">
-          คู่มือการเดินทางสู่ดินแดนแห่งทั้ง 7 ธาตุ สำหรับนักเดินทางมือใหม่
-          รวบรวมข้อมูลชาติ เทพเจ้า และระบบปฏิกิริยาธาตุไว้ครบในหน้าเดียว
-        </p>
-        <div class="hero-buttons">
-          <a class="btn btn-primary" href="#world">🧭 สำรวจ 7 ชาติแห่ง Teyvat</a>
-          <a class="btn btn-glass" href="#calculator">⚗️ ทดลองผสมธาตุ (Calculator)</a>
-        </div>
-
-        <ul class="stats">
-          <li>
-            <span class="stat-num">7</span>
-            <span class="stat-title">ภูมิภาคอันกว้างใหญ่</span>
-            <span class="stat-note">จาก Mondstadt สู่ Snezhnaya</span>
-          </li>
-          <li>
-            <span class="stat-num">7</span>
-            <span class="stat-title">ธาตุแห่งสวรรค์</span>
-            <span class="stat-note">พลังธรรมชาติที่สรรค์สร้างโลก</span>
-          </li>
-          <li>
-            <span class="stat-num">15+</span>
-            <span class="stat-title">ปฏิกิริยาธาตุ</span>
-            <span class="stat-note">ผสมพลังให้ทวีคูณหรือควบคุมศัตรู</span>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- ========== SECTION 2: WORLD ========== -->
-    <section id="world" class="section">
-      <div class="container">
-        <header class="section-head">
-          <p class="eyebrow">🌍 World of Teyvat</p>
-          <h2>7 ชาติและเหล่าทวยเทพแห่งแดนสวรรค์</h2>
-          <p>
-            แผ่นดินใหญ่เทย์วัตประกอบด้วยหลายประเทศที่ถูกปกครองโดยเทพเจ้าแห่งธาตุ (Archon)
-            แต่ละดินแดนมีอุดมการณ์ วัฒนธรรม และพลังธาตุเป็นเอกลักษณ์ของตัวเอง
-            เลือกกรองตามธาตุ แล้วกดการ์ดเพื่ออ่านรายละเอียด
-          </p>
-        </header>
-
-        <div class="filters" role="group" aria-label="กรองชาติตามธาตุ">
-          <button class="filter-btn is-active" type="button" data-filter="all" aria-pressed="true">ทั้งหมด</button>
-          <button class="filter-btn" type="button" data-filter="anemo" aria-pressed="false">ลม Anemo</button>
-          <button class="filter-btn" type="button" data-filter="geo" aria-pressed="false">หิน Geo</button>
-          <button class="filter-btn" type="button" data-filter="electro" aria-pressed="false">สายฟ้า Electro</button>
-          <button class="filter-btn" type="button" data-filter="dendro" aria-pressed="false">พืช Dendro</button>
-          <button class="filter-btn" type="button" data-filter="hydro" aria-pressed="false">น้ำ Hydro</button>
-          <button class="filter-btn" type="button" data-filter="pyro" aria-pressed="false">ไฟ Pyro</button>
-          <button class="filter-btn" type="button" data-filter="cryo" aria-pressed="false">น้ำแข็ง Cryo</button>
-        </div>
-
-        <div class="nation-grid" id="nations-grid">
-
-          <article class="nation-card el-anemo" data-element="anemo">
-            <div class="card-media">
-              <img src="images/mondstadt.svg" alt="ภาพวาดเมือง Mondstadt มีกังหันลม มหาวิหาร และสายลมสีเขียวมิ้นต์ใต้ท้องฟ้าสดใส" loading="lazy">
-              <span class="badge"><i class="dot"></i>Anemo • ลม</span>
-              <span class="chapter">บทที่ 0</span>
-            </div>
-            <div class="card-body">
-              <div class="card-title"><h3>Mondstadt</h3><span>มอนด์ชตัดท์</span></div>
-              <p class="tagline">"City of Freedom (เมืองแห่งอิสรภาพ)"</p>
-              <dl class="facts">
-                <div><dt>เทพเจ้า</dt><dd>Barbatos (Venti)</dd></div>
-                <div><dt>อุดมการณ์</dt><dd>อิสรภาพไร้พันธนาการ</dd></div>
-              </dl>
-              <p class="card-text">ดินแดนแห่งทุ่งหญ้า กังหันลม และบทกวีก้องกังวาน ปกป้องโดยกองอัศวิน Favonius และสายลมของมังกร Dvalin</p>
-              <button class="nation-more" type="button" data-nation="mondstadt">👁 ดูข้อมูลเชิงลึกและสถานที่สำคัญ</button>
-            </div>
-          </article>
-
-          <article class="nation-card el-geo" data-element="geo">
-            <div class="card-media">
-              <img src="images/liyue.svg" alt="ภาพวาดเมืองท่า Liyue ยามค่ำ มีเจดีย์ โคมไฟสีทอง และหน้าผาหินสูง" loading="lazy">
-              <span class="badge"><i class="dot"></i>Geo • หิน</span>
-              <span class="chapter">บทที่ 1</span>
-            </div>
-            <div class="card-body">
-              <div class="card-title"><h3>Liyue</h3><span>หลี่เยว่</span></div>
-              <p class="tagline">"City of Contracts (เมืองแห่งพันธสัญญา)"</p>
-              <dl class="facts">
-                <div><dt>เทพเจ้า</dt><dd>Morax / Rex Lapis (Zhongli)</dd></div>
-                <div><dt>อุดมการณ์</dt><dd>สัญญาและการค้าที่เป็นธรรม</dd></div>
-              </dl>
-              <p class="card-text">มหานครท่าเรือค้าขายที่เจริญรุ่งเรือง ก่อตั้งโดยราชาแห่งหินผา ผู้ให้กำเนิดเหรียญ Mora ที่ใช้กันทั่วเทย์วัต</p>
-              <button class="nation-more" type="button" data-nation="liyue">👁 ดูข้อมูลเชิงลึกและสถานที่สำคัญ</button>
-            </div>
-          </article>
-
-          <article class="nation-card el-electro" data-element="electro">
-            <div class="card-media">
-              <img src="images/inazuma.svg" alt="ภาพวาดหมู่เกาะ Inazuma มีฟ้าผ่าสีม่วง ประตูโทริอิสีแดง และกลีบซากุระ" loading="lazy">
-              <span class="badge"><i class="dot"></i>Electro • สายฟ้า</span>
-              <span class="chapter">บทที่ 2</span>
-            </div>
-            <div class="card-body">
-              <div class="card-title"><h3>Inazuma</h3><span>อินาสึมะ</span></div>
-              <p class="tagline">"Nation of Eternity (ดินแดนแห่งนิรันดร์)"</p>
-              <dl class="facts">
-                <div><dt>เทพเจ้า</dt><dd>Raiden Shogun (Ei)</dd></div>
-                <div><dt>อุดมการณ์</dt><dd>ความเป็นนิรันดร์ที่ไม่แปรผัน</dd></div>
-              </dl>
-              <p class="card-text">หมู่เกาะโพ้นทะเลที่ล้อมรอบด้วยมรสุมอสุนีบาต มีศาลเจ้าและต้นซากุระศักดิ์สิทธิ์ที่ Grand Narukami Shrine</p>
-              <button class="nation-more" type="button" data-nation="inazuma">👁 ดูข้อมูลเชิงลึกและสถานที่สำคัญ</button>
-            </div>
-          </article>
-
-          <article class="nation-card el-dendro" data-element="dendro">
-            <div class="card-media">
-              <img src="images/sumeru.svg" alt="ภาพวาดป่าฝนของ Sumeru มีต้นไม้ยักษ์ เนินทรายสีทอง และอนุภาคแสงสีเขียว" loading="lazy">
-              <span class="badge"><i class="dot"></i>Dendro • พืช</span>
-              <span class="chapter">บทที่ 3</span>
-            </div>
-            <div class="card-body">
-              <div class="card-title"><h3>Sumeru</h3><span>สุเมรุ</span></div>
-              <p class="tagline">"Nation of Wisdom (แดนแห่งปัญญา)"</p>
-              <dl class="facts">
-                <div><dt>เทพเจ้า</dt><dd>Lesser Lord Kusanali (Nahida)</dd></div>
-                <div><dt>อุดมการณ์</dt><dd>ปัญญาและความรู้รอบรู้</dd></div>
-              </dl>
-              <p class="card-text">การผสานระหว่างป่าฝนอุดมสมบูรณ์และทะเลทรายโบราณ ศูนย์กลางความรู้ของโลกผ่านสถาบัน Sumeru Akademiya</p>
-              <button class="nation-more" type="button" data-nation="sumeru">👁 ดูข้อมูลเชิงลึกและสถานที่สำคัญ</button>
-            </div>
-          </article>
-
-          <article class="nation-card el-hydro" data-element="hydro">
-            <div class="card-media">
-              <img src="images/fontaine.svg" alt="ภาพวาดเมือง Fontaine มีหอนาฬิกา โรงละครโอเปร่า น้ำตก และคลองสีฟ้า" loading="lazy">
-              <span class="badge"><i class="dot"></i>Hydro • น้ำ</span>
-              <span class="chapter">บทที่ 4</span>
-            </div>
-            <div class="card-body">
-              <div class="card-title"><h3>Fontaine</h3><span>ฟอนเทน</span></div>
-              <p class="tagline">"Nation of Justice (นครแห่งความยุติธรรม)"</p>
-              <dl class="facts">
-                <div><dt>เทพเจ้า</dt><dd>Furina / Neuvillette</dd></div>
-                <div><dt>อุดมการณ์</dt><dd>ความยุติธรรมและกฎหมาย</dd></div>
-              </dl>
-              <p class="card-text">ศูนย์กลางแห่งศิลปะการแสดง โรงอุปรากร Epiclese และเทคโนโลยีพลังงานน้ำ พร้อมโลกใต้น้ำให้ดำดิ่งสำรวจ</p>
-              <button class="nation-more" type="button" data-nation="fontaine">👁 ดูข้อมูลเชิงลึกและสถานที่สำคัญ</button>
-            </div>
-          </article>
-
-          <article class="nation-card el-pyro" data-element="pyro">
-            <div class="card-media">
-              <img src="images/natlan.svg" alt="ภาพวาดภูเขาไฟของ Natlan มีลาวาไหล วิหารหินขั้นบันได และประกายไฟสีส้ม" loading="lazy">
-              <span class="badge"><i class="dot"></i>Pyro • ไฟ</span>
-              <span class="chapter">บทที่ 5</span>
-            </div>
-            <div class="card-body">
-              <div class="card-title"><h3>Natlan</h3><span>นาตลัน</span></div>
-              <p class="tagline">"Nation of War (แดนแห่งสงคราม)"</p>
-              <dl class="facts">
-                <div><dt>เทพเจ้า</dt><dd>Mavuika</dd></div>
-                <div><dt>อุดมการณ์</dt><dd>จิตวิญญาณแห่งการประลอง</dd></div>
-              </dl>
-              <p class="card-text">แผ่นดินภูเขาไฟร้อนระอุที่ผู้คนอยู่เคียงข้าง Saurians (สัตว์ตระกูลมังกรโบราณ) แบ่งเป็น 6 ชนเผ่า</p>
-              <button class="nation-more" type="button" data-nation="natlan">👁 ดูข้อมูลเชิงลึกและสถานที่สำคัญ</button>
-            </div>
-          </article>
-
-          <article class="nation-card el-cryo" data-element="cryo">
-            <div class="card-media">
-              <img src="images/snezhnaya.svg" alt="ภาพวาดป้อมปราการหิมะของ Snezhnaya มีหนามน้ำแข็ง พายุหิมะ และแสงออโรร่า" loading="lazy">
-              <span class="badge"><i class="dot"></i>Cryo • น้ำแข็ง</span>
-              <span class="chapter">บทที่ 6</span>
-            </div>
-            <div class="card-body">
-              <div class="card-title"><h3>Snezhnaya</h3><span>สเนซนายา</span></div>
-              <p class="tagline">"Nation of Ice (จักรวรรดิเหมันต์)"</p>
-              <dl class="facts">
-                <div><dt>เทพเจ้า</dt><dd>Tsaritsa</dd></div>
-                <div><dt>อุดมการณ์</dt><dd>การต่อต้านกฎแห่งสวรรค์</dd></div>
-              </dl>
-              <p class="card-text">มหาอำนาจทางเทคโนโลยีและการทหาร ฐานบัญชาการของ Fatui และเหล่า Harbingers ที่รวบรวม Gnosis ทั่วโลก</p>
-              <button class="nation-more" type="button" data-nation="snezhnaya">👁 ดูข้อมูลเชิงลึกและสถานที่สำคัญ</button>
-            </div>
-          </article>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- ========== SECTION 3: ELEMENTS ========== -->
-    <section id="elements" class="section section-alt">
-      <div class="container">
-        <header class="section-head">
-          <p class="eyebrow">✨ Elemental Mechanics</p>
-          <h2>ศาสตร์แห่ง 7 ธาตุและปฏิกิริยาพลิกแพลง</h2>
-          <p>
-            หัวใจของการต่อสู้ใน Teyvat คือการผสานพลังธาตุเพื่อสร้างความเสียหายทวีคูณ ควบคุมศัตรู
-            หรือลดเกราะป้องกัน ลองเลือกคู่ธาตุในเครื่องคำนวณด้านล่างเพื่อดูผลลัพธ์
-          </p>
-        </header>
-
-        <ul class="element-row">
-          <li class="el-pyro"><span class="el-icon" aria-hidden="true">🔥</span><strong>Pyro</strong><small>ไฟ (เผาและขยายดาเมจ)</small></li>
-          <li class="el-hydro"><span class="el-icon" aria-hidden="true">💧</span><strong>Hydro</strong><small>น้ำ (ทำให้เปียก)</small></li>
-          <li class="el-electro"><span class="el-icon" aria-hidden="true">⚡</span><strong>Electro</strong><small>สายฟ้า (ช็อตต่อเนื่อง)</small></li>
-          <li class="el-cryo"><span class="el-icon" aria-hidden="true">❄️</span><strong>Cryo</strong><small>น้ำแข็ง (ทำให้เย็น/แช่แข็ง)</small></li>
-          <li class="el-anemo"><span class="el-icon" aria-hidden="true">🍃</span><strong>Anemo</strong><small>ลม (กระจาย Swirl)</small></li>
-          <li class="el-geo"><span class="el-icon" aria-hidden="true">💎</span><strong>Geo</strong><small>หิน (ผลึกโล่)</small></li>
-          <li class="el-dendro"><span class="el-icon" aria-hidden="true">🌿</span><strong>Dendro</strong><small>พืช (ผลิบาน/เร่งโต)</small></li>
-        </ul>
-
-        <!-- เครื่องคำนวณปฏิกิริยาธาตุ -->
-        <div id="calculator" class="calc">
-          <div class="calc-head">
-            <h3>⚗️ Reaction Calculator (เครื่องคำนวณปฏิกิริยา)</h3>
-            <p>คลิกเลือก 2 ธาตุเพื่อดูผลลัพธ์</p>
-          </div>
-
-          <div class="calc-grid">
-            <div class="picker" data-picker="a">
-              <p class="picker-title">ธาตุตั้งต้น (Element 1) <strong id="label-a">Pyro (ไฟ)</strong></p>
-              <div class="picker-buttons">
-                <button type="button" class="el-btn el-pyro is-selected" data-element="pyro" aria-pressed="true">🔥 Pyro</button>
-                <button type="button" class="el-btn el-hydro" data-element="hydro" aria-pressed="false">💧 Hydro</button>
-                <button type="button" class="el-btn el-electro" data-element="electro" aria-pressed="false">⚡ Electro</button>
-                <button type="button" class="el-btn el-cryo" data-element="cryo" aria-pressed="false">❄️ Cryo</button>
-                <button type="button" class="el-btn el-anemo" data-element="anemo" aria-pressed="false">🍃 Anemo</button>
-                <button type="button" class="el-btn el-geo" data-element="geo" aria-pressed="false">💎 Geo</button>
-                <button type="button" class="el-btn el-dendro" data-element="dendro" aria-pressed="false">🌿 Dendro</button>
-              </div>
-            </div>
-
-            <div class="plus" aria-hidden="true">+</div>
-
-            <div class="picker" data-picker="b">
-              <p class="picker-title">ธาตุผสมผสาน (Element 2) <strong id="label-b">Hydro (น้ำ)</strong></p>
-              <div class="picker-buttons">
-                <button type="button" class="el-btn el-pyro" data-element="pyro" aria-pressed="false">🔥 Pyro</button>
-                <button type="button" class="el-btn el-hydro is-selected" data-element="hydro" aria-pressed="true">💧 Hydro</button>
-                <button type="button" class="el-btn el-electro" data-element="electro" aria-pressed="false">⚡ Electro</button>
-                <button type="button" class="el-btn el-cryo" data-element="cryo" aria-pressed="false">❄️ Cryo</button>
-                <button type="button" class="el-btn el-anemo" data-element="anemo" aria-pressed="false">🍃 Anemo</button>
-                <button type="button" class="el-btn el-geo" data-element="geo" aria-pressed="false">💎 Geo</button>
-                <button type="button" class="el-btn el-dendro" data-element="dendro" aria-pressed="false">🌿 Dendro</button>
-              </div>
-            </div>
-
-            <div class="result" aria-live="polite">
-              <div class="result-top">
-                <span class="result-label">ผลลัพธ์ปฏิกิริยา</span>
-                <span id="reaction-badge" class="tier tier-good">Synergy: S Tier</span>
-              </div>
-              <h4 id="reaction-title">Vaporize (ระเหย)</h4>
-              <p id="reaction-sub" class="result-sub">Amplifying Reaction (คูณดาเมจ)</p>
-              <p id="reaction-desc">ดาเมจทวีคูณทันที! Pyro โจมตีเป้าหมายที่ติด Hydro ได้ x1.5 แต่ Hydro โจมตีเป้าหมายที่ติด Pyro ได้สูงถึง x2.0</p>
-              <p class="result-tag">ประเภทคอมโบ: <strong id="reaction-tag">Multiplying DMG</strong></p>
-            </div>
-          </div>
-        </div>
-
-        <!-- ตารางสรุปปฏิกิริยา -->
-        <div class="cheat">
-          <h3>📋 ตารางสรุปปฏิกิริยาธาตุยอดนิยมสำหรับผู้เริ่มต้น (Quick Cheat Sheet)</h3>
-          <table>
-            <thead>
-              <tr>
-                <th scope="col">ปฏิกิริยา (Reaction)</th>
-                <th scope="col">ธาตุที่ผสมผสาน</th>
-                <th scope="col">ผลของสถานะ / รูปแบบดาเมจ</th>
-                <th scope="col">คำแนะนำสำหรับมือใหม่</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th scope="row" data-label="ปฏิกิริยา"><span class="c-pyro">Vaporize (ระเหย)</span></th>
-                <td data-label="ธาตุที่ผสม">Pyro + Hydro</td>
-                <td data-label="ผลของสถานะ">คูณความเสียหาย 1.5x ถึง 2.0x</td>
-                <td data-label="คำแนะนำ">ดาเมจเป้าหมายเดี่ยวแรงมาก เหมาะกับการสู้บอส</td>
-              </tr>
-              <tr>
-                <th scope="row" data-label="ปฏิกิริยา"><span class="c-cryo">Melt (ละลาย)</span></th>
-                <td data-label="ธาตุที่ผสม">Pyro + Cryo</td>
-                <td data-label="ผลของสถานะ">คูณความเสียหาย 1.5x ถึง 2.0x</td>
-                <td data-label="คำแนะนำ">Pyro ใส่เป้าหมายที่ติด Cryo ได้ 2.0x ตัวเลขคริติคอลสูงมาก</td>
-              </tr>
-              <tr>
-            <tbody>
-              <tr>
-                <th scope="row" data-label="ปฏิกิริยา"><span class="c-pyro">Vaporize (ระเหย)</span></th>
-                <td data-label="ธาตุที่ผสม">Pyro + Hydro</td>
-                <td data-label="ผลของสถานะ">คูณความเสียหาย 1.5x ถึง 2.0x</td>
-                <td data-label="คำแนะนำ">ดาเมจเป้าหมายเดี่ยวแรงมาก เหมาะกับการสู้บอส</td>
-              </tr>
-              <tr>
-                <th scope="row" data-label="ปฏิกิริยา"><span class="c-cryo">Melt (ละลาย)</span></th>
-                <td data-label="ธาตุที่ผสม">Pyro + Cryo</td>
-                <td data-label="ผลของสถานะ">คูณความเสียหาย 1.5x ถึง 2.0x</td>
-                <td data-label="คำแนะนำ">Pyro ใส่เป้าหมายที่ติด Cryo ได้ 2.0x ตัวเลขคริติคอลสูงมาก</td>
-              </tr>
-              <tr>
-                <th scope="row" data-label="ปฏิกิริยา"><span class="c-cryo">Freeze (แช่แข็ง)</span></th>
-                <td data-label="ธาตุที่ผสม">Hydro + Cryo</td>
-                <td data-label="ผลของสถานะ">ศัตรูถูกล็อกขยับไม่ได้ชั่วคราว</td>
-                <td data-label="คำแนะนำ">คุมมอนสเตอร์เป็นกลุ่มให้อยู่นิ่ง ปลอดภัยสำหรับมือใหม่</td>
-              </tr>
-              <tr>
-                <th scope="row" data-label="ปฏิกิริยา"><span class="c-electro">Electro-Charged (ชาร์จไฟ)</span></th>
-                <td data-label="ธาตุที่ผสม">Hydro + Electro</td>
-                <td data-label="ผลของสถานะ">ไฟฟ้าช็อตต่อเนื่อง กระโดดไปหาศัตรูที่เปียกน้ำรอบข้าง</td>
-                <td data-label="คำแนะนำ">ทำให้ศัตรูชะงักบ่อย เหมาะกับการกวาดมอนสเตอร์ฝูงใหญ่</td>
-              </tr>
-              <tr>
-                <th scope="row" data-label="ปฏิกิริยา"><span class="c-dendro">Bloom / Hyperbloom</span></th>
-                <td data-label="ธาตุที่ผสม">Dendro + Hydro (+ Electro)</td>
-                <td data-label="ผลของสถานะ">สร้างเมล็ดพืช แล้วยิงจรวดติดตามศัตรู</td>
-                <td data-label="คำแนะนำ">ยิ่งมีค่า Elemental Mastery สูง ดาเมจยิ่งแรง</td>
-              </tr>
-              <tr>
-                <th scope="row" data-label="ปฏิกิริยา"><span class="c-anemo">Swirl (กระจาย)</span></th>
-                <td data-label="ธาตุที่ผสม">Anemo + Pyro / Hydro / Electro / Cryo</td>
-                <td data-label="ผลของสถานะ">กระจายธาตุเป็นวงกว้าง ใช้ไม่ได้กับ Geo และ Dendro</td>
-                <td data-label="คำแนะนำ">เซ็ตอาร์ติแฟกต์ Viridescent Venerer 4 ชิ้นช่วยลดการต้านทานธาตุของศัตรูลง 40%</td>
-              </tr>
-              <tr>
-                <th scope="row" data-label="ปฏิกิริยา"><span class="c-geo">Crystallize (ตกผลึก)</span></th>
-                <td data-label="ธาตุที่ผสม">Geo + Pyro / Hydro / Electro / Cryo</td>
-                <td data-label="ผลของสถานะ">สร้างผลึกให้เก็บเพื่อได้โล่ธาตุ</td>
-                <td data-label="คำแนะนำ">เดินไปเก็บผลึกระหว่างสู้ เพื่อรับโล่ป้องกันความเสียหาย</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-    </section>
-
-  </main>
-
-  <!-- ========== FOOTER ========== -->
-  <footer class="site-footer">
-    <div class="container footer-grid">
-      <div>
-        <p class="footer-brand"><span aria-hidden="true">✦</span> Teyvat Guide</p>
-        <p>คู่มือแนะนำการผจญภัยในโลกเทย์วัตสำหรับนักเดินทางหน้าใหม่ รวบรวมข้อมูลชาติ เทพเจ้า และระบบธาตุที่ควรรู้ก่อนเริ่มเล่น</p>
-      </div>
-      <div>
-        <p class="footer-title">เนื้อหาหลัก</p>
+    <article class="city">
+      <img src="images/0386851a028480eb95da974ccd2227ea_213412409097284740.png" alt="ภาพมุมสูงเมือง Mondstadt มีกำแพงหิน กังหันลม และมหาวิหาร ล้อมรอบด้วยทะเลสาบ Cider Lake">
+      <div class="info">
+        <h3>Mondstadt (มอนด์ชตัดท์)</h3>
+        <p class="tagline">"City of Freedom" เมืองแห่งอิสรภาพ</p>
         <ul>
-          <li><a href="#home">หน้าแรก</a></li>
-          <li><a href="#world">เจ็ดชาติแห่งเทย์วัต</a></li>
-          <li><a href="#elements">ระบบธาตุและการผสานพลัง</a></li>
+          <li><b>ธาตุประจำชาติ:</b> Anemo (ลม)</li>
+          <li><b>เทพเจ้า:</b> Barbatos (Venti เทพแห่งสายลมและเสียงดนตรี)</li>
+          <li><b>อุดมการณ์:</b> อิสรภาพไร้พันธนาการ</li>
         </ul>
+        <p>
+          เมืองริมทะเลสาบ Cider Lake ที่หลุดพ้นจากการปกครองของจอมทรราช Decarabian จนกลายเป็นเมืองเสรี
+          มีกองอัศวิน Knights of Favonius และกิลด์นักผจญภัยคอยดูแลความสงบ
+        </p>
+        <p><b>สถานที่สำคัญ:</b> มหาวิหาร Favonius Cathedral, หน้าผา Starsnatch Cliff, ต้นไม้ศักดิ์สิทธิ์ Windrise</p>
+        <p><b>ของเด่นท้องถิ่น:</b> Dandelion Seed, Windwheel Aster, Philanemo Mushroom</p>
       </div>
-      <div>
-        <p class="footer-title">ข้อมูลผู้จัดทำ</p>
-        <p>จัดทำโดยทีม Rush ในโครงการ Discovery Piscine ที่ 42 Bangkok เพื่อฝึกใช้ HTML, CSS และ JavaScript</p>
-      </div>
-    </div>
-    <div class="container footer-legal">
-      <p>Genshin Impact เป็นเครื่องหมายการค้าจดทะเบียนของ HoYoverse เว็บไซต์นี้เป็นผลงานแฟนเมดที่ไม่แสวงหาผลกำไร ภาพประกอบทั้งหมดเป็นภาพวาดที่ทีมสร้างขึ้นเอง ไม่ได้มาจากในเกม</p>
-      <p>© 2026 Teyvat Guide Fan Project</p>
-    </div>
-  </footer>
+    </article>
+  </section>
 
-  <!-- ========== หน้าต่างรายละเอียดชาติ (Modal) ========== -->
-  <div id="nation-modal" class="modal" hidden>
-    <div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="modal-title" tabindex="-1">
-      <button id="modal-close-x" class="modal-x" type="button" aria-label="ปิดหน้าต่าง">✕</button>
-      <h3 id="modal-title"></h3>
-      <p id="modal-concept" class="modal-concept"></p>
-      <dl class="modal-facts">
-        <div><dt>ธาตุประจำชาติ</dt><dd id="modal-element"></dd></div>
-        <div><dt>เทพผู้ปกครอง</dt><dd id="modal-archon"></dd></div>
-      </dl>
-      <h4>ตำนานและประวัติความเป็นมา</h4>
-      <p id="modal-lore"></p>
-      <h4>สถานที่สำคัญที่ควรไปสำรวจ</h4>
-      <p id="modal-landmarks"></p>
-      <h4>ของเด่นและวัตถุดิบในท้องถิ่น</h4>
-      <p id="modal-specialty"></p>
-      <div class="modal-actions">
-        <button id="modal-close" class="btn btn-primary" type="button">ปิดหน้าต่าง</button>
+  <!-- ส่วนที่ 3: ธาตุและปฏิกิริยา -->
+  <section id="elements">
+    <h2>ศาสตร์แห่ง 7 ธาตุ</h2>
+    <p class="intro">หัวใจของการต่อสู้คือการผสมธาตุให้เกิดปฏิกิริยา ลองเลือกคู่ธาตุด้านล่างเพื่อดูผลลัพธ์</p>
+
+    <ul class="elements">
+      <li>🔥 <b>Pyro</b><br>ไฟ</li>
+      <li>💧 <b>Hydro</b><br>น้ำ</li>
+      <li>⚡ <b>Electro</b><br>สายฟ้า</li>
+      <li>❄️ <b>Cryo</b><br>น้ำแข็ง</li>
+      <li>🍃 <b>Anemo</b><br>ลม</li>
+      <li>💎 <b>Geo</b><br>หิน</li>
+      <li>🌿 <b>Dendro</b><br>พืช</li>
+    </ul>
+
+    <div class="calc">
+      <h3>เครื่องคำนวณปฏิกิริยา</h3>
+      <div class="pickers">
+        <select id="element1">
+          <option value="pyro">🔥 Pyro</option>
+          <option value="hydro">💧 Hydro</option>
+          <option value="electro">⚡ Electro</option>
+          <option value="cryo">❄️ Cryo</option>
+          <option value="anemo">🍃 Anemo</option>
+          <option value="geo">💎 Geo</option>
+          <option value="dendro">🌿 Dendro</option>
+        </select>
+        <span>+</span>
+        <select id="element2">
+          <option value="pyro">🔥 Pyro</option>
+          <option value="hydro" selected>💧 Hydro</option>
+          <option value="electro">⚡ Electro</option>
+          <option value="cryo">❄️ Cryo</option>
+          <option value="anemo">🍃 Anemo</option>
+          <option value="geo">💎 Geo</option>
+          <option value="dendro">🌿 Dendro</option>
+        </select>
+      </div>
+      <div id="result" aria-live="polite">
+        <h4 id="result-title"></h4>
+        <p id="result-text"></p>
       </div>
     </div>
-  </div>
+  </section>
+
+  <footer>
+    <p>เว็บไซต์แฟนเมดที่ไม่แสวงหากำไร Genshin Impact เป็นเครื่องหมายการค้าของ HoYoverse</p>
+    <p>ภาพเมือง Mondstadt เป็นภาพหน้าจอจากเกม (เครดิต @guille994) · © 2026 Teyvat Guide</p>
+  </footer>
 
   <script src="script.js"></script>
 </body>
