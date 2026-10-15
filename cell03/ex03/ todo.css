@@ -1,0 +1,29 @@
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: lightgray;
+}
+
+button {
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+#ft_list {
+    width: 300px;
+    margin: 20px auto;
+}
+
+#ft_list div {
+    background-color: white;
+    padding: 15px;
+    margin-bottom: 5px;
+    border: 1px solid black;
+    cursor: pointer;
+    overflow-wrap: anywhere;
+}
+
+#ft_list div:hover {
+    background-color: lightpink;
+}
