@@ -10,7 +10,7 @@ function draw() {
 }
 
 balloon.addEventListener("click", function () {
-  size += 10;
+  size += 100;
   colorIndex = (colorIndex + 1) % 3;
   if (size > 420) {
     size = 200;
